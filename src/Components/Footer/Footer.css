@@ -1,0 +1,15 @@
+footer {
+  background-color: #080708;
+  color: white;
+  font-weight: 200;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.footer-growlerz {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0
+}
+.copyright{
+  font-size: .75rem;
+}

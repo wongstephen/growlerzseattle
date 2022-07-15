@@ -1,0 +1,36 @@
+
+.newsletter-container {
+  background-color: #fdca40;
+  font-weight: 200;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form > * {
+  border: 0px;
+  height: 3rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+.newsletter-form > input {
+  width: 18rem;
+}
+
+.newsletter-form > button {
+  background-color: white;
+  border-radius: 0 .75rem .75rem 0;
+  color: black;
+  font-weight: 600;
+  letter-spacing: .15rem;
+  width: 3rem;
+}
+
+.carat {
+  color: #3772ffff;
+  position: relative;
+  right: 10px;
+}

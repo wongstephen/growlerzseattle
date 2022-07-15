@@ -1,0 +1,12 @@
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+ 
+#logo{
+  width: 5rem;
+  /* z-index: 1; */
+}

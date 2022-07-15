@@ -1,0 +1,33 @@
+.product-container {
+  margin: 2rem 0;
+}
+
+.product-img-container {
+  width: 85vw;
+  height: calc(85vw);
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 30rem;
+  max-height: 25rem;
+}
+
+.product-img-container>img {
+  width: 100%;
+  transform: translateY(-75px);
+}
+
+.product-text{
+  padding: 0 2rem;
+}
+
+.product-btn {
+  background-color: #3772ffff;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.429);
+  color: white;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}

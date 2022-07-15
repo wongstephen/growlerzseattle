@@ -1,0 +1,19 @@
+.welcome {
+  width: 100%;
+}
+.img-container {
+  margin: 0 auto;
+  height: 25rem;
+  overflow: hidden;
+  max-width: 850px;
+}
+.img-container > img{
+  margin-top: -450px;
+  margin-left: -200px;
+}
+.welcome-title{
+  letter-spacing: .2rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  margin: 2.5rem 0;
+}
