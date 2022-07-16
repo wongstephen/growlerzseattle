@@ -27,6 +27,8 @@ Acceptance Criteria
 ## Dependancies
 
 Tabler Icons
+Materials UI https://mui.com/
+react-router-dom
 
 # Inspiration
 
@@ -38,3 +40,7 @@ rich-black-fogra-39: #080708ff
 blue-crayola: #3772ffff
 sunglow: #fdca40ff
 platinum: #e6e8e6ff
+
+## Tasks
+
+- Create React Router

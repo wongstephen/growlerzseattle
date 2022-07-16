@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import { IconMenu2, IconX } from "@tabler/icons";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,8 +21,18 @@ export default function Navigation() {
       />
       <div>
         <ul className={`nav-menu ${menuOpen ? "open" : "closed"}`}>
-          <li>Home</li>
-          <li>Play Park</li>
+          <li>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/playpark" onClick={() => setMenuOpen(false)}>
+              Play Park
+            </Link>
+          </li>
+
           <li>Day Care</li>
           <li>Events</li>
           <li>FAQ</li>

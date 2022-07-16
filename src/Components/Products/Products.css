@@ -11,23 +11,26 @@
   max-height: 25rem;
 }
 
-.product-img-container>img {
+.product-img-container > img {
   width: 100%;
   transform: translateY(-75px);
 }
 
-.product-text{
+.product-text {
   padding: 0 2rem;
 }
 
 .product-btn {
-  background-color: #3772ffff;
-  border-radius: 1rem;
-  border: 0;
+  background-color: red;
+  border: 2px solid black;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.429);
+  padding: 1rem 2rem;
+}
+
+.product-btn > * {
   color: white;
   font-weight: 600;
-  letter-spacing: .2rem;
-  padding: 1rem 2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
