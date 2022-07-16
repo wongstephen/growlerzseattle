@@ -7,11 +7,11 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 export default function Playpark() {
   return (
     <div>
-      <h2>
+      <h1>
         Growlerz
         <br />
         Play Park
-      </h2>
+      </h1>
       <div className="img-container-product">
         <img src={dogPoolImg} alt="Play Park" />
       </div>

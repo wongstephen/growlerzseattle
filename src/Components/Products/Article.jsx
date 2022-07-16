@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "./Article.css";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 export default function Products({ title, image, text, link, textBtn }) {

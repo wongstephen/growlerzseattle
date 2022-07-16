@@ -1,5 +1,3 @@
-import "./App.css";
-
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Newsletter from "./components/Newsletter/Newsletter";
@@ -16,7 +14,6 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/playpark" element={<Playpark />} />
       </Routes>
-
       <Newsletter />
       <Footer />
     </div>

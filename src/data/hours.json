@@ -1,0 +1,10 @@
+{
+  "playpark": {
+    "weekday": "6pm - 9pm",
+    "sat": "12pm - 8pm",
+    "sun": "12pm - 6pm"
+  },
+  "daycare": {
+    "weekday": "7am - 6pm"
+  }
+}

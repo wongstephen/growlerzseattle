@@ -7,7 +7,7 @@ export default function Newsletter() {
     <div className="newsletter-container">
       <h2>Join our Newsletter</h2>
       <form className="newsletter-form">
-        <label for="newsletter-input">Email</label>
+        <label htmlFor="newsletter-input">Email</label>
         <TextField
           id="newsletter-input"
           label="Email"

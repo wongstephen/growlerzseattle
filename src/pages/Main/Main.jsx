@@ -1,14 +1,14 @@
 import React from "react";
 import daycare from "../../assets/daycare.JPEG";
 import playParkImg from "../../assets/playpark.jpg";
-import Products from "../../components/Products/Products";
+import Article from "../../components/Products/Article";
 import Welcome from "./Welcome";
 import triviaImg from "../../assets/trivia.jpeg";
 export default function Main() {
   return (
     <>
       <Welcome />
-      <Products
+      <Article
         title="Play Park"
         image={playParkImg}
         text="All humans ages 21+ and dogs of all ages welcomed to play park featuring
@@ -16,13 +16,14 @@ export default function Main() {
         link="playPark"
         textBtn="Details"
       />
-      <Products
+      <Article
         title="Day Care"
         image={daycare}
         text="Your pups are in good hands while you are away. Our staff supervises care for your dogs and are trained thoroughly in PET CPR and First Aid"
+        textBtn="Details"
       />
-      <Products title="Trivia" image={triviaImg} />
-      <Products title="Food Truck" image={playParkImg} />
+      <Article title="Trivia" image={triviaImg} textBtn="Details" />
+      <Article title="Food Truck" image={playParkImg} textBtn="Details" />
     </>
   );
 }
