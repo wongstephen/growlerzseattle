@@ -44,3 +44,7 @@ platinum: #e6e8e6ff
 ## Tasks
 
 - Create React Router
+
+## Obstacles
+
+- Started using Materials IU to cut down work on effects. Took a long time to figure out, but researching online, I realized the react-router-dom's Link added an underline to the Material UI's button. I was targeting the button, but instead had to target the Link to remove the underline.

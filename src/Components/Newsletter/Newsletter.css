@@ -5,31 +5,23 @@
   padding-top: 2rem;
 }
 .newsletter-form {
-  display: flex;
-  justify-content: center;
+  display: block
 }
 
-.newsletter-form > * {
-  border: 0px;
-  height: 3rem;
-  margin: 0;
-  padding: 0 1rem;
-}
+
 .newsletter-form > input {
+  display: block;
   width: 18rem;
 }
-
-.newsletter-form > button {
-  background-color: white;
-  border-radius: 0 0.75rem 0.75rem 0;
-  color: black;
-  font-weight: 600;
-  letter-spacing: 0.15rem;
-  width: 3rem;
+.newsletter-form > label {
+  display: block;
+  color: transparent;
+  position: relative;
+  left: -5rem;
 }
 
-.carat {
-  color: #3772ffff;
-  position: relative;
-  right: 10px;
+button.newsletter-btn {
+  color: black;
+  margin: .5rem;
+  font-weight: 600;
 }

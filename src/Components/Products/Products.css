@@ -20,17 +20,8 @@
   padding: 0 2rem;
 }
 
-.product-btn {
-  background-color: red;
-  border: 2px solid black;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.429);
-  padding: 1rem 2rem;
-}
-
-.product-btn > * {
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+button.productBtn {
   text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
 }

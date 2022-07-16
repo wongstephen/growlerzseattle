@@ -5,7 +5,10 @@ import Hours from "../Hours/Hours";
 export default function Welcome() {
   return (
     <div className="welcome">
-      <h1 className="welcome-title">Growlerz Seattle</h1>
+      <h1 className="welcome-title company">
+        Growlerz <br />
+        Seattle
+      </h1>
       <h3 className="welcome-title">
         DOGS. BEER. COMMUNITY. <br /> COLUMBIA CITY NEIGHBORHOOD | SEATTLE
       </h3>

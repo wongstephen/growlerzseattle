@@ -4,7 +4,7 @@ import playParkImg from "../../assets/playpark.jpg";
 import Products from "../Products/Products";
 import Welcome from "../Welcome/Welcome";
 import triviaImg from "../../assets/trivia.jpeg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 export default function Main() {
   return (
     <>
@@ -14,7 +14,8 @@ export default function Main() {
         image={playParkImg}
         text="All humans ages 21+ and dogs of all ages welcomed to play park featuring
 	  7,000 sq. ft. of outdoor space and local craft beers on tap."
-        btnLink={<Link to="playPark">Details</Link>}
+        link="playPark"
+        textBtn='Details'
       />
       <Products
         title="Day Care"

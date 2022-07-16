@@ -9,38 +9,93 @@
   width: 100%;
   transform: translateY(-75px);
 }
-
+.desc {
+  line-height: 1.5;
+}
+.desc.intro {
+  padding: 2rem;
+}
+/* Pricing */
 .product-pricing > div {
   background-color: #3772ffff;
-  border: 0;
-  width: 85vw;
-  margin: 2rem auto;
-  text-align: left;
-  padding: 1rem;
+  border-radius: 1rem;
   color: white;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  text-align: left;
+  width: 85vw;
 }
 .product-pricing > div > h2 {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 400;
   text-align: center;
+  text-align: left;
+  margin: 1.5rem 0;
 }
 .product-line {
-  height: 0.25rem;
-  width: 100%;
-  margin: 0 auto;
   background-color: white;
+  height: .5px;
+  margin: 0 auto;
+  margin: 1.5rem 0;
+  width: 100%;
 }
 .product-pricing > div > h3 > p {
   font-weight: 400;
   font-size: 0.75rem;
   margin: 0.25rem;
 }
+div.price-container {
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.price-type{
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+  font-size: 1.25em;
+}
+.price-container > div > h3{
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.25rem;
+}
 p.price {
-  font-weight: 800;
-  font-size: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
   margin: 0;
 }
-.price-container {
-  display: flex;
-  justify-content: space-around;
+.currency {
+  font-weight: 400;
+  vertical-align: super;
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px
+}
+.disclaimer{
+  margin: 0;
+  font-size: .5rem;
+}
+
+.planfreq{
+  font-size: 1rem
+}
+
+/* plan action */
+button.getStarted {
+  color: white; 
+  font-size: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Park Rules */
+.park-rules {
+  padding: 2rem;
+}
+button.park-rules-btn {
+  color: #3772ffff;
+  font-weight: 600;
 }

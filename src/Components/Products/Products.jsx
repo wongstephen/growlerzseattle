@@ -1,8 +1,8 @@
 import React from "react";
 import "./Products.css";
 import { Button } from "@mui/material";
-
-export default function Products({ title, image, text, btnLink }) {
+import { Link } from "react-router-dom";
+export default function Products({ title, image, text, link, textBtn }) {
   return (
     <div className="product-container">
       <div className="product-img-container">
@@ -10,14 +10,11 @@ export default function Products({ title, image, text, btnLink }) {
       </div>
       <h2 className="product-title">{title}</h2>
       <p className="product-text">{text}</p>
-      <Button
-        // sx={{ padding: "1rem 2rem" }}
-        variant="contained"
-        type="button"
-        className="product-btn"
-      >
-        {btnLink}
-      </Button>
+      <Link to={`/${link}`} style={{ textDecoration: "none" }}>
+        <Button variant="outlined" className="productBtn">
+          {textBtn}
+        </Button>
+      </Link>
     </div>
   );
 }
