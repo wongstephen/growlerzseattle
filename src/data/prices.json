@@ -1,0 +1,18 @@
+{
+  "playpark": {
+    "single_entry" : {
+      "one": 12,
+      "two": 18
+    },
+    "punch_card" : {
+      "one": 100,
+      "two": 170
+    },
+    "membership" : {
+      "monthly-one": 49,
+      "monthly-two": 69,
+      "yearly-one": 539,
+      "yearly-two": 739
+    }
+  }
+}

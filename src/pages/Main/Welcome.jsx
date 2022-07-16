@@ -5,13 +5,13 @@ import Hours from "../../components/Hours/Hours";
 export default function Welcome() {
   return (
     <div className="welcome">
-      <h1 className="page-title page-heading">
+      <h1>
         Growlerz <br />
         Seattle
       </h1>
-      <h3 className="page-heading">
+      <h2 className="welcome">
         DOGS. BEER. COMMUNITY. <br /> COLUMBIA CITY NEIGHBORHOOD | SEATTLE
-      </h3>
+      </h2>
       <div className="img-container">
         <img
           src={welcomeImg}

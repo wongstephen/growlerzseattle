@@ -3,11 +3,12 @@
   font-weight: 200;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  text-align: center;
 }
 .newsletter-form {
-  display: block
+  display: block;
+  text-align: center;
 }
-
 
 .newsletter-form > input {
   display: block;

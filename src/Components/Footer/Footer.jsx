@@ -7,14 +7,17 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Footer() {
   return (
     <footer>
-      <h4 className="footer-growlerz">Growlerz Seattle</h4>
-      <p>
+      <h3 className="footer">Growlerz Seattle</h3>
+      <p className="footer">
         5269 RAINIER AVE. S<br />
-        SEATTLE, WA 98118
+        SEATTLE, WA 98118 <br />
+        (206) 459-2726 <br />
       </p>
-      <p>(206) 459-2726</p>
-      <FacebookIcon /> <InstagramIcon />
-      <p className="copyright">© copyright {new Date().getFullYear()}</p>
+
+      <FacebookIcon className="footer-social" />
+      <InstagramIcon className="footer-social" />
+
+      <p className="copyright footer">© copyright {new Date().getFullYear()}</p>
     </footer>
   );
 }

@@ -108,6 +108,7 @@ body {
   font-family: "Epilogue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e6e8e6ff;
 }
 ol,
 ul {
@@ -131,13 +132,35 @@ table {
 
 /* Main page titles */
 .page-heading {
-  letter-spacing: 0.2rem;
-  line-height: 1.75rem;
-  font-weight: 800;
-  /* margin: 2.5rem 0; */
+
+ 
 }
 
-.page-title {
-  line-height: 3.5rem;
-  font-size: 3rem;
+h1, h2, h3, h4, p, span {
+  max-width: 68ch;
+}
+h1 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: .25rem;
+  text-align: center;
+  margin: 2.5rem auto;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: center;
+}
+
+div.alert {
+  margin: 0 auto;
 }

@@ -4,12 +4,29 @@ footer {
   font-weight: 200;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  text-align: center;
 }
-.footer-growlerz {
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0
+
+p.footer {
+  letter-spacing: .1rem;
+  line-height: 1.25;
+  margin: 0 auto;
 }
-.copyright{
+
+h3.footer {
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-transform: uppercase; 
+  margin: 0 auto;
+}
+
+p.copyright{
   font-size: .75rem;
+  margin: 2rem auto;
+  pad: 0;
+}
+
+svg.footer-social {
+  font-size: 2rem;
+  margin: 1rem;
 }

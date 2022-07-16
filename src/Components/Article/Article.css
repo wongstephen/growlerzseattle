@@ -1,5 +1,6 @@
 .product-container {
   margin: 2rem 0;
+  text-align: center;
 }
 
 .product-img-container {
@@ -17,11 +18,14 @@
 }
 
 .product-text {
+  text-align: left;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
-button.productBtn {
+button.article {
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 2px;
+
 }

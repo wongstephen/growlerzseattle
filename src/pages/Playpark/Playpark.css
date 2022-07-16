@@ -13,8 +13,29 @@
   line-height: 1.5;
 }
 .desc.intro {
-  padding: 2rem;
+  padding: 0 2rem;
+  margin: 2rem auto;
 }
+
+h1.playpark{
+  margin-bottom: 0;
+}
+h2.playpark {
+  margin-top: 0;
+}
+
+/* Alert */
+
+div.alert {
+  margin: 0 auto;
+  width: 85%;
+}
+
+p.alert {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 /* Pricing */
 .product-pricing > div {
   background-color: #3772ffff;
@@ -47,14 +68,17 @@
 div.price-container {
   display: flex;
   justify-content: space-between;
-  
-
+  margin-bottom: 2.5rem;
+}
+p.desc{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .price-type{
   font-weight: 600;
-  margin-top: 3rem;
   margin-bottom: .5rem;
   font-size: 1.25em;
+  text-align: left;
 }
 .price-container > div > h3{
   font-weight: 400;
@@ -86,7 +110,6 @@ p.price {
 button.getStarted {
   color: white; 
   font-size: 1rem;
-  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -94,8 +117,13 @@ button.getStarted {
 /* Park Rules */
 .park-rules {
   padding: 2rem;
+  text-align: center;
+}
+p.park-rules-desc {
+  text-align: left;
 }
 button.park-rules-btn {
   color: #3772ffff;
   font-weight: 600;
 }
+

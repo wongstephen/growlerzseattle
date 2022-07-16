@@ -7,11 +7,8 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 export default function Playpark() {
   return (
     <div>
-      <h1>
-        Growlerz
-        <br />
-        Play Park
-      </h1>
+      <h1 className="playpark">Growlerz</h1>
+      <h2 className="playpark">Play Park</h2>
       <div className="img-container-product">
         <img src={dogPoolImg} alt="Play Park" />
       </div>
@@ -23,15 +20,18 @@ export default function Playpark() {
         you and your dog to hang out.
       </p>
       <div>
-        <Alert severity="info">
-          Vaccination records ( Rabies, Bordetella & DHPP mandatory) must be
-          submitted and approved before entry to daycare or use of play park.
-          All dogs should be on flea and tick preventative and be wearing a
-          quick release collar. No prong or chain collars are allowed. <br />{" "}
-          <br />​ All dogs over 7 months of age must be spayed / neutered.
-          Please set up a profile for your dog using the link below and include
-          his/her vaccination records. You will be notified once approved. There
-          is no cost to set up a profile for your dog.
+        <Alert severity="info" className="alert">
+          <p className="alert">
+            Vaccination records ( Rabies, Bordetella & DHPP mandatory) must be
+            submitted and approved before entry to daycare or use of play park.
+            All dogs should be on flea and tick preventative and be wearing a
+            quick release collar. No prong or chain collars are allowed. <br />
+            <br />
+            ​All dogs over 7 months of age must be spayed / neutered. Please set
+            up a profile for your dog using the link below and include his/her
+            vaccination records. You will be notified once approved. There is no
+            cost to set up a profile for your dog.
+          </p>
           <br />
           <br />
           <Button variant="text">
@@ -139,7 +139,7 @@ export default function Playpark() {
         </div>
       </div>
       <div className="park-rules">
-        <p className="desc">
+        <p className="park-rules-desc">
           Patrons using the play park will be responsible for monitoring their
           dog’s behavior and for cleaning up after their dog(s). Any aggressive
           behavior or fighting will not be tolerated. First offense: all
@@ -147,10 +147,11 @@ export default function Playpark() {
           will be asked to leave that day. Third offense, dogs will no longer be
           allowed to access services. Payments for services will be forfeited
           (at a pro-rated rate as applicable).
-          <br />
-          <br />
+        </p>
+        <p>
+          Check out our full list of play park rules
           <Button variant="outlined" className="getStarted park-rules-btn">
-            Check out our full list of play park rules.
+            Play Park Rules
           </Button>
         </p>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import daycare from "../../assets/daycare.JPEG";
 import playParkImg from "../../assets/playpark.jpg";
-import Article from "../../components/Products/Article";
+import Article from "../../components/Article/Article";
 import Welcome from "./Welcome";
 import triviaImg from "../../assets/trivia.jpeg";
 export default function Main() {

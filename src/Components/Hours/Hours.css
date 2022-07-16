@@ -6,3 +6,8 @@
 .hours-bold {
   font-weight: bold;
 }
+
+p.hours {
+  text-align: center;
+  margin: 1rem auto;
+}
