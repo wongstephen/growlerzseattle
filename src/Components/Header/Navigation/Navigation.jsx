@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import "./Navigation.css";
 import { IconMenu2, IconX } from "@tabler/icons";
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <IconMenu2
+      <MenuIcon
         className="menu-action"
         onClick={() => setMenuOpen(true)}
-        size={60}
         style={{ display: menuOpen ? "none" : "inline-block" }}
       />
-      <IconX
+      <CloseIcon
         className="menu-action"
-        size={60}
         onClick={() => setMenuOpen(false)}
         style={{ display: menuOpen ? "inline-block" : "none" }}
       />

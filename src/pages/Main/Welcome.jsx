@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
 import welcomeImg from "../../assets/welcome.jpg";
-import Hours from "../Hours/Hours";
+import Hours from "../../components/Hours/Hours";
 export default function Welcome() {
   return (
     <div className="welcome">
@@ -10,7 +10,7 @@ export default function Welcome() {
         Seattle
       </h1>
       <h3 className="welcome-title">
-        DOGS. BEER. COMMUNITY. <br /> COLUMBIA CITY NEIGHBORHOOD | SEATTLE
+        DOGS. BEER. COMMUNITY. <br /> COLUMBIA CITY NEIGHBwORHOOD | SEATTLE
       </h3>
       <div className="img-container">
         <img

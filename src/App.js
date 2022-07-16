@@ -1,12 +1,12 @@
 import "./App.css";
 
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Newsletter from "./Components/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 import { Route, Routes } from "react-router-dom";
-import Main from "./Components/Main/Main";
-import Playpark from "./Components/Playpark/Playpark";
+import Main from "./pages/Main/Main";
+import Playpark from "./pages/Playpark/Playpark";
 
 function App() {
   return (
