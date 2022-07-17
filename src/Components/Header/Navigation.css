@@ -1,5 +1,5 @@
 .nav-menu {
-  background-color: #fdca40ff;
+  background-color: #FCA311;
   font-size: 2rem;
   height: 100%;
   left: 0;
@@ -21,7 +21,7 @@
   line-height: 2;
   font-weight: 800;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .nav-menu > li:nth-child(1) {
   margin-top: 5rem;
@@ -32,11 +32,12 @@ button.login-btn {
 }
 .menu-action {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: .5rem;
+  top: .5rem;
   transition: all 1s ease;
   z-index: 3;
   border-radius: 5px;
+  color: white;
 }
 
 .nav-menu.open {
@@ -72,24 +73,26 @@ svg.menu-action {
     margin: 0;
     padding: 0;
   }
-  ul#expanded {
+  ul#expanded.nav-menu {
     background-color: transparent;
     box-shadow: none;
     display: flex;
-    font-size: .75rem;
-    font-weight: 700;
-    height: 2rem;
-    left: 0;
-    line-height: 0;
     justify-content: space-between;
-    list-style: none;
+
+    min-width: 550px;
     opacity: 1;
+    position: static;
     transform: translateY(0px);
     transition: none;
-    min-width: 550px;
     width: 100%;
     z-index: 1;
-    position: static;
+    text-transform: uppercase;
+  }
+
+  .nav-menu > li > *, .nav-menu > li {
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
   button.login-btn {
     display: none;

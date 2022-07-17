@@ -17,34 +17,59 @@
   margin: 2rem auto;
 }
 
-h1.playpark{
-  margin-bottom: 0;
+/* Weather */
+.park-weather {
+  background-color: white;
+  width: 325px;
+  font-size: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-h2.playpark {
-  margin-top: 0;
+.park-weather > img {
+  width: 36px;
+  height: auto;
+  position: relative;
+  top: -2px;
 }
 
 /* Alert */
 
 div.alert {
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
 }
 
 p.alert {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  max-width: none;
 }
 
 /* Pricing */
-.product-pricing > div {
+
+.product-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 685px;
+  width: 95%;
+}
+.product-pricing-card {
   background-color: #3772ffff;
   border-radius: 1rem;
   color: white;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 2rem 3rem;
   text-align: left;
-  width: 85vw;
+  width: 90%;  
+  max-width: 300px
 }
 .product-pricing > div > h2 {
   font-size: 2rem;
@@ -67,6 +92,7 @@ p.alert {
 }
 div.price-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
@@ -101,7 +127,6 @@ p.price {
   margin: 0;
   font-size: .5rem;
 }
-
 .planfreq{
   font-size: 1rem
 }
@@ -113,16 +138,61 @@ button.getStarted {
   margin-bottom: 1rem;
 }
 
-
 /* Park Rules */
 .park-rules {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 p.park-rules-desc {
   text-align: left;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  line-height: 1.25;
+}
+div.park-rules-container{
+text-align: center;
 }
 button.park-rules-btn {
   color: #3772ffff;
   font-weight: 600;
+  margin: 1rem auto;
 }
 
+
+
+@media screen and (min-width: 665px) and (max-width: 1024px) {
+  div#member-card{
+    width: 100%;
+    max-width: none;
+    margin: 1rem;
+  }
+  div.price-container-member {
+    display: flex;
+    justify-content: space-around;
+  }
+.price-container.member {
+  display: flex;
+  justify-content: space-between;
+}
+.member-flex {
+  width: 12rem
+};
+}
+@media screen and (min-width: 1024px) {
+  div.product-pricing{
+    max-width: 1024px;
+  }
+  div.section-intro {
+    display: flex;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  p.desc.intro {
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+    font-size: 1.5rem;
+    max-width: 45ch;
+  }
+}

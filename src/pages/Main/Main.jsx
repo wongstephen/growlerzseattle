@@ -1,5 +1,5 @@
 import React from "react";
-import daycareImg from "../../assets/daycare.JPEG";
+import daycareImg from "../../assets/daycare2.JPEG";
 import playParkImg from "../../assets/playpark.jpg";
 import Article from "../../components/Article/Article";
 import Welcome from "./Welcome";
@@ -61,6 +61,7 @@ export default function Main() {
       <div className="main-container">
         {data.map((article) => (
           <Article
+            key={article.title}
             title={article.title}
             image={article.image}
             text={article.text}

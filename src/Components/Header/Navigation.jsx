@@ -8,9 +8,6 @@ export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <Button variant="outlined" className="login-btn" size="small">
-        Login
-      </Button>
       <MenuRounded
         className="menu-action"
         onClick={() => setMenuOpen(true)}
@@ -41,7 +38,15 @@ export default function Navigation() {
           <li>Events</li>
           <li>FAQ</li>
           <li>Contact</li>
-          <li>Login</li>
+          <li>
+            <a
+              href="https://growlerz.gingrapp.com/front_end/login/email"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

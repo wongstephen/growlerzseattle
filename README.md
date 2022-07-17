@@ -36,6 +36,8 @@ https://www.cadetpet.com/dog-basics/must-visit-indoor-dog-parks
 
 ## Colors
 
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+
 rich-black-fogra-39: #080708ff
 blue-crayola: #3772ffff
 sunglow: #fdca40ff

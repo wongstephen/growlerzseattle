@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header>
       <div>
-        <Link to="/">
+        {/* <Link to="/">
           <img src={logo} alt="Growlers Seattle Logo" id="logo" />
-        </Link>
+        </Link> */}
         <Navigation />
       </div>
     </header>
