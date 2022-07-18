@@ -14,7 +14,6 @@ export default function Newsletter() {
           variant="outlined"
           size="large"
         />
-        <br />
         <Button type="submit" variant="text" className="newsletter-btn">
           Submit
         </Button>

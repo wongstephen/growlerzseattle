@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { IconMenu2, IconX } from "@tabler/icons";
 import { Link } from "react-router-dom";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+import { MenuRounded, CloseRounded } from "@mui/icons-material/";
+import { Button } from "@mui/material";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <MenuIcon
+      <Button variant="outlined" className="login-btn" size="small">
+        Login
+      </Button>
+      <MenuRounded
         className="menu-action"
         onClick={() => setMenuOpen(true)}
         style={{ display: menuOpen ? "none" : "inline-block" }}
       />
-      <CloseIcon
+      <CloseRounded
         className="menu-action"
         onClick={() => setMenuOpen(false)}
         style={{ display: menuOpen ? "inline-block" : "none" }}

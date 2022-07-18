@@ -2,8 +2,8 @@
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 35rem;
-  max-height: 30rem;
+  max-width: 30rem;
+  max-height: 25rem;
 }
 .img-container-product > img {
   width: 100%;
@@ -16,11 +16,8 @@
   padding: 0 2rem;
   margin: 2rem auto;
 }
-div.section-intro {
-  margin: 0 auto;
-  padding: 2rem;
-}
-h1.playpark {
+
+h1.playpark{
   margin-bottom: 0;
 }
 h2.playpark {
@@ -29,15 +26,9 @@ h2.playpark {
 
 /* Alert */
 
-div.alert-container {
-  margin: 0 auto;
-  background-color: #e5f6fd;
-}
-
 div.alert {
   margin: 0 auto;
-  padding: 2rem;
-  max-width: 1200px;
+  width: 85%;
 }
 
 p.alert {
@@ -45,16 +36,8 @@ p.alert {
   font-size: 1rem;
 }
 
-div.Alert-message {
-  margin: 0 auto;
-}
-
 /* Pricing */
-.product-pricing {
-  max-width: 1024;
-  margin: 0 auto;
-}
-.product-pricing-card > div {
+.product-pricing > div {
   background-color: #3772ffff;
   border-radius: 1rem;
   color: white;
@@ -62,9 +45,8 @@ div.Alert-message {
   padding: 2rem 3rem;
   text-align: left;
   width: 85vw;
-  max-width: 400px;
 }
-.product-pricing-card > div > h2 {
+.product-pricing > div > h2 {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
@@ -73,12 +55,12 @@ div.Alert-message {
 }
 .product-line {
   background-color: white;
-  height: 0.5px;
+  height: .5px;
   margin: 0 auto;
   margin: 1.5rem 0;
   width: 100%;
 }
-.product-pricing-card > div > h3 > p {
+.product-pricing > div > h3 > p {
   font-weight: 400;
   font-size: 0.75rem;
   margin: 0.25rem;
@@ -88,17 +70,17 @@ div.price-container {
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
-p.desc {
+p.desc{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.price-type {
+.price-type{
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   font-size: 1.25em;
   text-align: left;
 }
-.price-container > div > h3 {
+.price-container > div > h3{
   font-weight: 400;
   margin: 0;
   font-size: 1.25rem;
@@ -113,85 +95,34 @@ p.price {
   vertical-align: super;
   font-size: 1.5rem;
   position: relative;
-  top: 3px;
+  top: 3px
 }
-.disclaimer {
+.disclaimer{
   margin: 0;
-  font-size: 0.5rem;
+  font-size: .5rem;
 }
 
-.planfreq {
-  font-size: 1rem;
+.planfreq{
+  font-size: 1rem
 }
 
 /* plan action */
 button.getStarted {
-  color: white;
+  color: white; 
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
+
 /* Park Rules */
 .park-rules {
   padding: 2rem;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 p.park-rules-desc {
   text-align: left;
-  line-height: 1.25;
-  margin-bottom: 2rem;
 }
 button.park-rules-btn {
   color: #3772ffff;
   font-weight: 600;
-  margin: 2rem auto;
 }
 
-@media (min-width: 768px) {
-  .product-pricing {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-  }
-  .product-pricing-card > div {
-    width: 325px;
-    height: 450px;
-  }
-
-  .product-pricing > div:nth-child(3) > div {
-    height: 800px;
-  }
-}
-
-@media (min-width: 1024px) {
-  div.section-intro {
-    max-width: 1200px;
-    display: flex;
-  }
-  .product-pricing-card > div {
-    width: 325px;
-    height: 800px;
-  }
-  div.product-pricing {
-    max-width: 1200px;
-  }
-  .img-container-product {
-    /* width: 100%;
-    overflow: hidden;
-    margin: 0 auto; */
-    width: 45rem;
-    height: 30rem;
-  }
-  p.intro,
-  .desc.intro {
-    font-size: 1.5rem;
-    width: 450px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 0 0 1rem;
-  }
-}

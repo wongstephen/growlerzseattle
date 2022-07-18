@@ -1,17 +1,30 @@
-.welcome {
+.welcome > h1 {
+  margin-bottom: 0;
+}
+.welcome-subtitle {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  position: relative;
+  top: -1rem;
+}
+h2.welcome-text {
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: 0;
   width: 100%;
 }
+
 .img-container {
   margin: 0 auto;
   height: 25rem;
   overflow: hidden;
-  max-width: 850px;
+  max-width: 900px;
 }
 .img-container > img {
   margin-top: -450px;
   margin-left: -200px;
+  /* width: 100%; */
 }
 
-h2.welcome {
-  font-size: 1.25rem;
-}

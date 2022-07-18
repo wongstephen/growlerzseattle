@@ -108,7 +108,13 @@ body {
   font-family: "Epilogue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e8e6ff;
+  background-color: rgb(122, 122, 122);
+}
+
+.App {
+  background-color: rgb(243, 243, 243);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 ol,
 ul {
@@ -132,11 +138,14 @@ table {
 
 /* Main page titles */
 
+h1, h2, h3, h4, p, span {
+  max-width: 68ch;
+}
 h1 {
   font-size: 4rem;
   line-height: 1.5;
   font-weight: 700;
-  letter-spacing: 0.25rem;
+  letter-spacing: .25rem;
   text-align: center;
   margin: 2.5rem auto;
 }
@@ -154,10 +163,3 @@ h3 {
   text-align: center;
 }
 
-div.alert {
-  margin: 0 auto;
-}
-
-strong {
-  font-weight: 600;
-}

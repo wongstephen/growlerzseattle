@@ -1,11 +1,15 @@
 header {
+width: 100%;
+background-color: white; 
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+header > div {
   align-items: top;
-  background-color: white;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 1rem;
 }
-
 #logo {
   width: 5rem;
 }

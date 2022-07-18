@@ -3,36 +3,40 @@
   font-size: 2rem;
   height: 100%;
   left: 0;
-  line-height: 3.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 0;
   transition: all 0.5s ease;
   width: 100%;
   z-index: 2;
-  box-shadow: 5px 5px 40px black;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.283);
   overflow-y: hidden;
 }
 
-.nav-menu > li > * {
-  margin-left: 2rem;
-  font-weight: 500;
+.nav-menu > li > *, .nav-menu > li {
+  /* margin-left: 2rem; */
+  line-height: 2;
+  font-weight: 800;
   text-decoration: none;
   color: black;
 }
 .nav-menu > li:nth-child(1) {
   margin-top: 5rem;
 }
-
+button.login-btn {
+  margin-right: 4rem;
+  top: .5rem
+}
 .menu-action {
   position: absolute;
   right: 1rem;
   top: 1rem;
   transition: all 1s ease;
   z-index: 3;
+  border-radius: 5px;
 }
 
 .nav-menu.open {
@@ -52,8 +56,8 @@
 }
 
 svg.menu-action {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -72,21 +76,22 @@ svg.menu-action {
     background-color: transparent;
     box-shadow: none;
     display: flex;
-    align-items: center;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 700;
     height: 2rem;
     left: 0;
     line-height: 0;
     justify-content: space-between;
     list-style: none;
-    position: relative;
     opacity: 1;
     transform: translateY(0px);
     transition: none;
     min-width: 550px;
     width: 100%;
-    max-width: 1000px;
     z-index: 1;
+    position: static;
   }
+  button.login-btn {
+    display: none;
+}
 }
