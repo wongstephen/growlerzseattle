@@ -22,7 +22,12 @@ export default function Main() {
         text="Your pups are in good hands while you are away. Our staff supervises care for your dogs and are trained thoroughly in PET CPR and First Aid"
         textBtn="Details"
       />
-      <Article title="Trivia" image={triviaImg} textBtn="Details" />
+      <Article
+        title="Trivia"
+        image={triviaImg}
+        text="Trivia Night Wednesday Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint eaque obcaecati deleniti quam cumque velit sunt."
+        textBtn="Details"
+      />
       <Article title="Food Truck" image={playParkImg} textBtn="Details" />
     </>
   );

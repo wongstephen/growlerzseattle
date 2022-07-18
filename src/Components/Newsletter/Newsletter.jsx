@@ -12,8 +12,7 @@ export default function Newsletter() {
           id="newsletter-input"
           label="Email"
           variant="outlined"
-          size="small"
-          className="new-input"
+          size="large"
         />
         <br />
         <Button type="submit" variant="text" className="newsletter-btn">

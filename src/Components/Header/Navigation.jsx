@@ -20,7 +20,10 @@ export default function Navigation() {
         style={{ display: menuOpen ? "inline-block" : "none" }}
       />
       <div>
-        <ul className={`nav-menu ${menuOpen ? "open" : "closed"}`}>
+        <ul
+          className={`nav-menu ${menuOpen ? "open" : "closed"}`}
+          id="expanded"
+        >
           <li>
             <Link to="/" onClick={() => setMenuOpen(false)}>
               Home
@@ -32,12 +35,9 @@ export default function Navigation() {
               Play Park
             </Link>
           </li>
-
           <li>Day Care</li>
           <li>Events</li>
           <li>FAQ</li>
-          <li>About Us</li>
-          <li>Location</li>
           <li>Contact</li>
           <li>Login</li>
         </ul>

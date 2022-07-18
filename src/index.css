@@ -131,19 +131,12 @@ table {
 }
 
 /* Main page titles */
-.page-heading {
 
- 
-}
-
-h1, h2, h3, h4, p, span {
-  max-width: 68ch;
-}
 h1 {
   font-size: 4rem;
   line-height: 1.5;
   font-weight: 700;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   text-align: center;
   margin: 2.5rem auto;
 }
@@ -163,4 +156,8 @@ h3 {
 
 div.alert {
   margin: 0 auto;
+}
+
+strong {
+  font-weight: 600;
 }

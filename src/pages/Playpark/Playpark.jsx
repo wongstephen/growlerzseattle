@@ -9,17 +9,19 @@ export default function Playpark() {
     <div>
       <h1 className="playpark">Growlerz</h1>
       <h2 className="playpark">Play Park</h2>
-      <div className="img-container-product">
-        <img src={dogPoolImg} alt="Play Park" />
+      <div className="section-intro">
+        <div className="img-container-product">
+          <img src={dogPoolImg} alt="Play Park" />
+        </div>
+        <p className="desc intro">
+          Our beautiful off leash play park is designed with both your dog and
+          you in mind! Our 7,000 sq. ft. outdoor space provides your pup room to
+          play while you enjoy a drink in the sun or under one of our covered
+          areas. Our smaller indoor space includes our taproom and plenty of
+          space for you and your dog to hang out.
+        </p>
       </div>
-      <p className="desc intro">
-        Our beautiful off leash play park is designed with both your dog and you
-        in mind! Our 7,000 sq. ft. outdoor space provides your pup room to play
-        while you enjoy a drink in the sun or under one of our covered areas.
-        Our smaller indoor space includes our taproom and plenty of space for
-        you and your dog to hang out.
-      </p>
-      <div>
+      <div className="alert-container">
         <Alert severity="info" className="alert">
           <p className="alert">
             Vaccination records ( Rabies, Bordetella & DHPP mandatory) must be
@@ -39,117 +41,133 @@ export default function Playpark() {
           </Button>
         </Alert>
       </div>
+
       <div className="product-pricing">
-        <div>
-          <h2>Play Park</h2>
-          <div className="product-line"></div>
-          <p className="desc">Single daily entry. Purchased upon entry.</p>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>12
-              </p>
-            </div>
-            <div>
-              <h3>
-                Two Dogs* <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>18
-              </p>
-              <p className="disclaimer">*Of the same family</p>
+        <div className="product-pricing-card">
+          <div>
+            <h2>Play Park</h2>
+            <div className="product-line"></div>
+            <p className="desc">Single daily entry. Purchased upon entry.</p>
+            <div className="price-container">
+              <div>
+                <h3>One Dog</h3>
+                <p className="price">
+                  <span className="currency">$</span>12
+                </p>
+              </div>
+              <div>
+                <h3>
+                  Two Dogs* <br />
+                </h3>
+                <p className="price">
+                  <span className="currency">$</span>18
+                </p>
+                <p className="disclaimer">*Of the same family</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="product-pricing">
-        <div>
-          <h2>Punch Card</h2>
-          <div className="product-line"></div>
-          <p className="desc">10 Discounted visits. Get the 11th free!</p>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>100
-              </p>
+        <div className="product-pricing-card">
+          <div>
+            <h2>Punch Card</h2>
+            <div className="product-line"></div>
+            <p className="desc">
+              Good for 10 Discounted visits. The 11th visit is free!
+            </p>
+            <div className="price-container">
+              <div>
+                <h3>One Dog</h3>
+                <p className="price">
+                  <span className="currency">$</span>100
+                </p>
+              </div>
+              <div>
+                <h3>
+                  Two Dogs <br />
+                </h3>
+                <p className="price">
+                  <span className="currency">$</span>170
+                </p>
+                <p className="disclaimer">*Of the same family</p>
+              </div>
             </div>
-            <div>
-              <h3>
-                Two Dogs <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>170
-              </p>
-            </div>
+            <Button variant="text" className="getStarted">
+              Get Started <ArrowRightAltIcon />
+            </Button>
           </div>
-          <Button variant="text" className="getStarted">
-            Get Started <ArrowRightAltIcon />
-          </Button>
         </div>
-      </div>
-      <div className="product-pricing">
-        <div>
-          <h2>Membership</h2>
-          <div className="product-line"></div>
-          <p className="desc">
-            Play park members get unlimited visits to our play park during
-            regular hours and receive a 5% discount for Day Care stays. Monthly
-            and annual membership packages are available.
-          </p>
-          <h3 className="price-type">Monthly</h3>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>49
-                <br />
-              </p>
+        <div className="product-pricing-card">
+          <div>
+            <h2>Membership</h2>
+            <div className="product-line"></div>
+            <p className="desc">
+              Play park members get unlimited visits to our play park during
+              regular hours and receive a 5% discount for Day Care stays.
+              Monthly and annual membership packages are available.
+            </p>
+            <h3 className="price-type">Monthly</h3>
+            <div className="price-container">
+              <div>
+                <h3>One Dog</h3>
+                <p className="price">
+                  <span className="currency">$</span>49
+                  <br />
+                </p>
+              </div>
+              <div>
+                <h3>
+                  Two Dogs <br />
+                </h3>
+                <p className="price">
+                  <span className="currency">$</span>69 <br />
+                </p>
+                <p className="disclaimer">*Of the same family</p>
+              </div>
             </div>
-            <div>
-              <h3>
-                Two Dogs <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>69 <br />
-              </p>
+            <h3 className="price-type">Annually</h3>
+            <div className="price-container">
+              <div>
+                <h3>One Dog</h3>
+                <p className="price">
+                  <span className="currency">$</span>539 <br />
+                </p>
+              </div>
+              <div>
+                <h3>
+                  Two Dogs <br />
+                </h3>
+                <p className="price">
+                  <span className="currency">$</span>759 <br />
+                </p>
+                <p className="disclaimer">*Of the same family</p>
+              </div>
             </div>
+            <Button variant="text" className="getStarted">
+              Get Started <ArrowRightAltIcon />
+            </Button>
           </div>
-          <h3 className="price-type">Annually</h3>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>539 <br />
-              </p>
-            </div>
-            <div>
-              <h3>
-                Two Dogs <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>759 <br />
-              </p>
-            </div>
-          </div>
-          <Button variant="text" className="getStarted">
-            Get Started <ArrowRightAltIcon />
-          </Button>
         </div>
       </div>
       <div className="park-rules">
         <p className="park-rules-desc">
           Patrons using the play park will be responsible for monitoring their
           dog’s behavior and for cleaning up after their dog(s). Any aggressive
-          behavior or fighting will not be tolerated. First offense: all
-          involved dogs will be asked to be put on a leash. Second offense: dogs
-          will be asked to leave that day. Third offense, dogs will no longer be
-          allowed to access services. Payments for services will be forfeited
-          (at a pro-rated rate as applicable).
+          behavior or fighting will not be tolerated. <br />
+          <br />
+          <strong>First offense:</strong> all involved dogs will be asked to be
+          put on a leash.
+          <br />
+          <br />
+          <strong>Second offense:</strong> dogs will be asked to leave that day.
+          Third offense, dogs will no longer be allowed to access services.
+          <br />
+          <br />
+          Payments for services will be forfeited (at a pro-rated rate as
+          applicable).
         </p>
         <p>
           Check out our full list of play park rules
+          <br />
           <Button variant="outlined" className="getStarted park-rules-btn">
             Play Park Rules
           </Button>
