@@ -1,23 +1,29 @@
 header {
+align-items: center;
+background-color: var(--oxford-blue); 
+display: flex;
+height: 3rem;
+justify-content: space-between;
+padding: 0 1rem;
+margin: 0 auto;
 width: 100%;
-background-color: #14213D; 
-height: 4rem;
 }
-header > div {
-  align-items: top;
 
-  display: flex;
-  justify-content: right;
-  margin: 0 auto;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  /* padding: 1rem;   */
-
+.nav-title {
+  font-family: 'Hammersmith One', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
 }
-/* #logo {
-  width: 5rem;
-  display: none
-} */
+
+svg.pets-icon {
+  transform: rotate(-15deg);
+  color: var(--text-color)
+}
+svg.pets-icon:hover {
+  transform: rotate(0deg);
+  color: white
+}
 
 @media (min-width: 768px) {
   #logo {

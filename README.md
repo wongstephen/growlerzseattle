@@ -51,3 +51,8 @@ https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
 ## Obstacles
 
 - Started using Materials IU to cut down work on effects. Took a long time to figure out, but researching online, I realized the react-router-dom's Link added an underline to the Material UI's button. I was targeting the button, but instead had to target the Link to remove the underline.
+
+## Things Learned
+
+- I dislike the amount of time and work that goes into design.
+- Using css white-space: pre-line to format JSON text.

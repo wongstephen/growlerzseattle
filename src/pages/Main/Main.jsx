@@ -21,7 +21,7 @@ export default function Main() {
       title: "Day Care",
       image: daycareImg,
       text: "Your pups are in good hands while you are away. Our staff supervises care for your dogs and are trained thoroughly in PET CPR and First Aid",
-      link: "playPark",
+      link: "/                                                                                ",
       textBtn: "Details",
     },
     {
@@ -29,35 +29,27 @@ export default function Main() {
       image: taproomImg,
       alt: "John Olalde - Unsplash - Taproom",
       text: `All humans ages 21+ and dogs of all ages welcomed to play park featuring 7,000 sq. ft. of outdoor space and local craft beers on tap.`,
-      link: "playPark",
+      link: "/",
       textBtn: "Details",
     },
     {
       title: "Dog Wash",
       image: dogWashImg,
       text: `All humans ages 21+ and dogs of all ages welcomed to play park featuring 7,000 sq. ft. of outdoor space and local craft beers on tap.`,
-      link: "playPark",
+      link: "/",
       textBtn: "Details",
     },
     {
-      title: "Events",
-      image: triviaImg,
-      text: `All humans ages 21+ and dogs of all ages welcomed to play park featuring 7,000 sq. ft. of outdoor space and local craft beers on tap.`,
-      link: "playPark",
-      textBtn: "Details",
-    },
-    {
-      title: "Food Truck",
+      title: "Food Truck & Events",
       image: foodtruckImg,
       text: `All humans ages 21+ and dogs of all ages welcomed to play park featuring 7,000 sq. ft. of outdoor space and local craft beers on tap.`,
-      link: "playPark",
+      link: "/",
       textBtn: "Details",
     },
   ];
   return (
     <>
       <Welcome />
-
       <div className="main-container">
         {data.map((article) => (
           <Article

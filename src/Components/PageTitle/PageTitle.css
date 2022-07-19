@@ -1,6 +1,7 @@
 h1.page-title {
   margin-top: 3rem;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 h2.page-subtitle {
   margin: 0 auto;

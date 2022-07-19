@@ -1,43 +1,37 @@
 .nav-menu {
-  background-color: #FCA311;
+  background-color: var(--orange-web);
   font-size: 2rem;
   height: 100%;
   left: 0;
   list-style: none;
   margin: 0;
-  padding: 0;
+  overflow-y: hidden;
+  padding-top: 5rem;
   position: absolute;
   text-align: center;
   top: 0;
   transition: all 0.5s ease;
   width: 100%;
-  z-index: 2;
-  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.283);
-  overflow-y: hidden;
+  z-index: 1;
+}
+.nav-menu > li > *, .nav-menu > li {
+  color: white;
+  font-weight: 800;
+  line-height: 2;
+  text-decoration: none;
 }
 
-.nav-menu > li > *, .nav-menu > li {
-  /* margin-left: 2rem; */
-  line-height: 2;
-  font-weight: 800;
-  text-decoration: none;
-  color: white;
-}
-.nav-menu > li:nth-child(1) {
-  margin-top: 5rem;
-}
 button.login-btn {
   margin-right: 4rem;
   top: .5rem
 }
 .menu-action {
+  color: white;
   position: absolute;
-  right: .5rem;
-  top: .5rem;
+  right: .5%;
+  top: .5%;
   transition: all 1s ease;
   z-index: 3;
-  border-radius: 5px;
-  color: white;
 }
 
 .nav-menu.open {
@@ -57,8 +51,8 @@ button.login-btn {
 }
 
 svg.menu-action {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -67,37 +61,35 @@ svg.menu-action {
     opacity: 0;
     pointer-events: none;
   }
-  .nav-menu > li:nth-child(1),
-  .nav-menu > li > a,
-  ul#expanded {
-    margin: 0;
-    padding: 0;
-  }
-  ul#expanded.nav-menu {
+
+  ul#navBar {
     background-color: transparent;
     box-shadow: none;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: flex-end;
+    margin: 0;
     min-width: 550px;
     opacity: 1;
+    padding: 0;
     position: static;
+    text-transform: uppercase;
     transform: translateY(0px);
     transition: none;
-    width: 100%;
     z-index: 1;
-    text-transform: uppercase;
   }
-
-  .nav-menu > li > *, .nav-menu > li {
+  .nav-item, .nav-item>a{
+    align-items: center;
+    color: var(--text-color);
+    display: flex;
     font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 400;
+    justify-content: center;
+    letter-spacing: 1.25px;
+    margin-right: 1rem;
   }
-  .nav-menu > li > *:hover, .nav-menu > li:hover {
-    font-weight: 800;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
-    text-decoration: underline;
+  .nav-item>a:hover {
+    color: white;
+    transition: 1s;
   }
   
 }

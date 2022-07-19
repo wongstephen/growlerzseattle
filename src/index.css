@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 html,
 body,
@@ -108,17 +108,19 @@ body {
   font-family: "Epilogue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(122, 122, 122);
+  background-color: var(--bg-body);
 }
 
 .App {
-  background-color: rgb(243, 243, 243);
+  background-color: var(--bg);
   max-width: 1200px;
   margin: 0 auto;
 }
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 blockquote,
 q {
@@ -140,6 +142,9 @@ table {
 
 h1, h2, h3, h4, p, span {
   max-width: 68ch;
+}
+p{
+  line-height: 1.25;
 }
 h1 {
   font-size: 4rem;
@@ -163,3 +168,19 @@ h3 {
   text-align: center;
 }
 
+:root {
+  --bg: #f5f5f5;
+  --bg-body: #EFEFEF;
+  --black: #000000;
+  --oxford-blue: #14213d;
+  --orange-web: #fca311;
+  --platinum: #e5e5e5;
+  --white: #ffffff;
+  --text-color: #dadce1;
+  --border-radius: 16px;
+  --speed: 500ms;
+}
+
+a { 
+  text-decoration: none;
+}

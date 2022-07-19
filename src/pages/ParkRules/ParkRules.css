@@ -1,0 +1,10 @@
+div.parkrules-container{
+  width: 92vw;
+  max-width: 800px ;
+  margin: 5rem auto;
+}
+p.parkrules{
+  white-space: pre-line;
+  width: 100%;
+  max-width: none;
+}
