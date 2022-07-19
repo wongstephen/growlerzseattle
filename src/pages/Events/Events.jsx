@@ -22,7 +22,7 @@ export default function Events() {
             <div className="event-image">300pxx300px Placeholder</div>
             <h2 className="event-card">{event.title}</h2>
             <p className="event-card date">{event.date}</p>
-            <p className="event-card">{event.content}</p>
+            <p className="event-card content">{event.content}</p>
           </div>
         ))}
       </div>

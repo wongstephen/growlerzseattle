@@ -21,10 +21,13 @@ div.event-image {
 h2.event-card{
   font-size: 1.75rem;
   text-align: left;
-  min-height: 4rem;
+  min-height: 5.5rem;
   text-transform: uppercase;
 }
 p.date {
   font-weight: 600;
   font-size: 1.25rem;
+}
+p.content {
+  white-space: pre-line;
 }
