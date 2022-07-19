@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Playpark.css";
 
 import PageTitle from "../../components/PageTitle/PageTitle";
@@ -12,20 +13,20 @@ export default function Playpark() {
   const key = process.env.REACT_APP_WEATHER_API;
   const [weather, setWeather] = useState({ text: "", temp: "", imgsrc: "" });
 
-  function fetchWeather() {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`)
-      .then((res) => res.json())
-      .then((data) =>
-        setWeather({
-          text: data.current.condition.text,
-          temp: data.current.temp_f,
-          imgsrc: data.current.condition.icon,
-        })
-      )
-      .catch((err) => console.log(err));
-  }
+  const getWeather = async () => {
+    const res = await fetch(
+      `http://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
+    );
+    const data = await res.json();
+    setWeather({
+      text: data.current.condition.text,
+      temp: data.current.temp_f,
+      imgsrc: data.current.condition.icon,
+    });
+  };
 
-  useEffect(() => fetchWeather(), []);
+  useEffect(() => getWeather, []);
+
   // useEffect(() => console.log(weather.current.condition.text), [weather]);
 
   return (
@@ -201,9 +202,11 @@ export default function Playpark() {
         <div className="park-rules-container">
           Check out our full list of play park rules
           <br />
-          <Button variant="outlined" className="getStarted park-rules-btn">
-            Play Park Rules
-          </Button>
+          <Link to="/parkrules">
+            <Button variant="outlined" className="getStarted park-rules-btn">
+              Play Park Rules
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -94,7 +94,10 @@ svg.menu-action {
     font-weight: 500;
     letter-spacing: 1px;
   }
-  button.login-btn {
-    display: none;
-}
+  .nav-menu > li > *:hover, .nav-menu > li:hover {
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+  }
+  
 }
