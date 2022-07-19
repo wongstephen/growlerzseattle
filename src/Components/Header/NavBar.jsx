@@ -24,7 +24,7 @@ export default function Navigation() {
         <NavItem text="Home" event={setMenuOpen} link={"/"} />
         <NavItem text="Play Park" event={setMenuOpen} link={"/playpark"} />
         <NavItem text="Day Care" event={setMenuOpen} link={"/"} />
-        <NavItem text="Events" event={setMenuOpen} link={"/"} />
+        <NavItem text="Events" event={setMenuOpen} link={"/events"} />
         <NavItem text="FAQ" event={setMenuOpen} link={"/"} />
         <NavItem text="Contact" event={setMenuOpen} link={"/"} />
         <li className="nav-item">

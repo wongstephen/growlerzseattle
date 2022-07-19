@@ -13,6 +13,18 @@ export default function Playpark() {
   const key = process.env.REACT_APP_WEATHER_API;
   const [weather, setWeather] = useState({ text: "", temp: "", imgsrc: "" });
 
+  /*   const getWeather = async () => {
+    const res = await fetch(
+      `http://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
+    );
+    const data = await res.json();
+    setWeather({
+      text: data.current.condition.text,
+      temp: data.current.temp_f,
+      imgsrc: data.current.condition.icon,
+    });
+  }; */
+
   const getWeather = async () => {
     const res = await fetch(
       `http://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`

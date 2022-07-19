@@ -2,6 +2,8 @@ h1.page-title {
   margin-top: 3rem;
   margin-bottom: 0;
   text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 h2.page-subtitle {
   margin: 0 auto;
@@ -10,4 +12,6 @@ h2.page-subtitle {
   letter-spacing: 5px;
   position: relative;
   top: -1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }

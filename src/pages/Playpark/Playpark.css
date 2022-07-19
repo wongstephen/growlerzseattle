@@ -62,7 +62,7 @@ p.alert {
   width: 95%;
 }
 .product-pricing-card {
-  background-color: #3772ffff;
+  background-color: var(--oxford-blue);
   border-radius: 1rem;
   color: white;
   margin: 0 auto;
