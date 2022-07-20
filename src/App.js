@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import CssBaseline from '@mui/material/CssBaseline';
+
+import Header from "./components/Header/Header";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
+// import ParkRules from "./pages/ParkRules/ParkRules";
+// import Events from "./pages/Events/Events";
+// import Main from "./pages/Main/Main";
+// import Playpark from "./pages/Playpark/Playpark";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <CssBaseline />
+      <Header />
+{/*       <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/playpark" element={<Playpark />} />
+        <Route path="/parkrules" element={<ParkRules />} />
+        <Route path="/events" element={<Events />} />
+      </Routes> */}
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
