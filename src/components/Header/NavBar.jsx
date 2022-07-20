@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
 import { MenuRounded, CloseRounded } from "@mui/icons-material/";
 import NavItem from "./NavItem";
 

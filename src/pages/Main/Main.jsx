@@ -48,7 +48,7 @@ export default function Main() {
     },
   ];
   return (
-    <>
+    <div className="page-container">
       <Welcome />
       <div className="main-container">
         {data.map((article) => (
@@ -62,6 +62,6 @@ export default function Main() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }

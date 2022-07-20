@@ -7,10 +7,12 @@ import PetsIcon from "@mui/icons-material/Pets";
 export default function Header() {
   return (
     <header>
-      <Link to="/" className="nav-title">
-        <PetsIcon className="pets-icon" />
-      </Link>
-      <NavBar />
+      <div>
+        <Link to="/" className="nav-title">
+          <PetsIcon className="pets-icon" />
+        </Link>
+        <NavBar />
+      </div>
     </header>
   );
 }

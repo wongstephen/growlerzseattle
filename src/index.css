@@ -4,10 +4,13 @@ body {
   font-family: "Epilogue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-body);
+  background-color: var(--bgbody);
 }
 .App {
   background-color: var(--bg);
+  margin: 0 auto;
+}
+.page-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -21,6 +24,6 @@ body {
   --platinum: #e5e5e5;
   --white: #ffffff;
   --text-color: #dadce1;
-  --border-radius: 16px;
+  --border-radius: 1rem;
   --speed: 500ms;
 }
