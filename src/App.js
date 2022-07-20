@@ -6,7 +6,7 @@ import Main from "./pages/Main/Main";
 import Events from "./pages/Events/Events";
 import Newsletter from "./components/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
-// import ParkRules from "./pages/ParkRules/ParkRules";
+import ParkRules from "./pages/ParkRules/ParkRules";
 // import Playpark from "./pages/Playpark/Playpark";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        {/* <Route path="/playpark" element={<Playpark />} />
-        <Route path="/parkrules" element={<ParkRules />} /> */}
+        {/* <Route path="/playpark" element={<Playpark />} /> */}
+        <Route path="/parkrules" element={<ParkRules />} />
         <Route path="/events" element={<Events />} />
       </Routes>
       <Newsletter />
