@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Growlers Seattle Local Commerce Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Stores
 
-## Available Scripts
+- As a user of the Growlerz Seattle commerce site
+  - I would like the app to inform me of business details, products, and relevant information. In order of priority:
+  1.  Product and Pricing
+  2.  Things to know before visiting
+  3.  Events and Food truck
+  4.  Taproom
+  5.  Hours and Location
+  6.  Park Rules and Pricing
+  7.  Misc
+  - I would like the app to be responsive on both mobile and desktop.
+  - I would like to easily find
+  - I would like to know if small dogs are separated from large dogs.
+  - Would like to see the layout of the dog park and photos.
+  - Would like to know are humans welcome (with/without dogs?)
 
-In the project directory, you can run:
+Acceptance Criteria
 
-### `npm start`
+1. The website is responsible for mobile and desktop
+2. Owner approves of the design and content
+3. Products are contained in their own components.
+4. Owners and update events and details via google sheets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependancies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tabler Icons
+Materials UI https://mui.com/
+react-router-dom
 
-### `npm test`
+# Inspiration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://www.cadetpet.com/dog-basics/must-visit-indoor-dog-parks
 
-### `npm run build`
+## Colors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--black: #000000;
+--oxford-blue: #14213d;
+--orange-web: #fca311;
+--platinum: #e5e5e5;
+--white: #ffffff;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tasks
 
-### `npm run eject`
+- Create React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Obstacles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Started using Materials IU to cut down work on effects. Took a long time to figure out, but researching online, I realized the react-router-dom's Link added an underline to the Material UI's button. I was targeting the button, but instead had to target the Link to remove the underline.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Things Learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- I dislike the amount of time and work that goes into design.
+- Using css white-space: pre-line to format JSON text.

@@ -1,0 +1,32 @@
+div.event-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5rem auto;
+  gap: 5rem 2rem;
+
+}
+div.event-card{
+  max-width: 450px;
+  margin: 0 2rem;
+}
+div.event-image {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: dimgray;
+}
+h2.event-card{
+  font-size: 1.75rem;
+  text-align: left;
+  min-height: 5.5rem;
+  text-transform: uppercase;
+}
+p.date {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+p.content {
+  white-space: pre-line;
+}
