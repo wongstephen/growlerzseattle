@@ -4,7 +4,6 @@ import rulesData from "../../data/parkrules.json";
 import PageTitle from "../../components/PageTitle/PageTitle";
 
 export default function ParkRules() {
-  console.log(rulesData);
   return (
     <div className="parkrules-container">
       <PageTitle title="Growlers" subtitle="Park Rules" />

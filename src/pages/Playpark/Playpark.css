@@ -1,0 +1,198 @@
+.img-container-product {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 30rem;
+  max-height: 25rem;
+}
+.img-container-product > img {
+  width: 100%;
+  transform: translateY(-75px);
+}
+.desc {
+  line-height: 1.5;
+}
+.desc.intro {
+  padding: 0 2rem;
+  margin: 2rem auto;
+}
+
+/* Weather */
+.park-weather {
+  background-color: white;
+  width: 325px;
+  font-size: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.park-weather > img {
+  width: 36px;
+  height: auto;
+  position: relative;
+  top: -2px;
+}
+
+/* Alert */
+
+div.alert {
+  margin: 0 auto;
+  width: 100%;
+}
+
+p.alert {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  max-width: none;
+}
+
+/* Pricing */
+
+.product-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 685px;
+  width: 95%;
+}
+.product-pricing-card {
+  background-color: var(--oxford-blue);
+  border-radius: 1rem;
+  color: white;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  text-align: left;
+  width: 90%;  
+  max-width: 300px
+}
+.product-pricing > div > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+.product-line {
+  background-color: white;
+  height: .5px;
+  margin: 0 auto;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.product-pricing > div > h3 > p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 0.25rem;
+}
+div.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+p.desc{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.price-type{
+  font-weight: 600;
+  margin-bottom: .5rem;
+  font-size: 1.25em;
+  text-align: left;
+}
+.price-container > div > h3{
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.25rem;
+}
+p.price {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+}
+.currency {
+  font-weight: 400;
+  vertical-align: super;
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px
+}
+.disclaimer{
+  margin: 0;
+  font-size: .5rem;
+}
+.planfreq{
+  font-size: 1rem
+}
+
+/* plan action */
+button.getStarted {
+  color: white; 
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Park Rules */
+.park-rules {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+p.park-rules-desc {
+  text-align: left;
+  font-size: 1.25rem;
+  margin: 2rem auto;
+  line-height: 1.25;
+}
+div.park-rules-container{
+text-align: center;
+}
+button.park-rules-btn {
+  color: #3772ffff;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
+
+
+@media screen and (min-width: 665px) and (max-width: 1024px) {
+  div#member-card{
+    width: 100%;
+    max-width: none;
+    margin: 1rem;
+  }
+  div.price-container-member {
+    display: flex;
+    justify-content: space-around;
+  }
+.price-container.member {
+  display: flex;
+  justify-content: space-between;
+}
+.member-flex {
+  width: 12rem
+};
+}
+@media screen and (min-width: 1024px) {
+  div.product-pricing{
+    max-width: 1024px;
+  }
+  div.section-intro {
+    display: flex;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  p.desc.intro {
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+    font-size: 1.5rem;
+    max-width: 45ch;
+  }
+}
