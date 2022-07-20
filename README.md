@@ -39,9 +39,13 @@ https://www.cadetpet.com/dog-basics/must-visit-indoor-dog-parks
 https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
 
 --black: #000000;
+
 --oxford-blue: #14213d;
+
 --orange-web: #fca311;
+
 --platinum: #e5e5e5;
+
 --white: #ffffff;
 
 ## Tasks
@@ -51,6 +55,7 @@ https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
 ## Obstacles
 
 - Started using Materials IU to cut down work on effects. Took a long time to figure out, but researching online, I realized the react-router-dom's Link added an underline to the Material UI's button. I was targeting the button, but instead had to target the Link to remove the underline.
+- I had problems with deploying to Netilfy. In the future I'll deploy with an empty project, then constant deploys. To remedy this project, I created a new one and moved components by components.
 
 ## Things Learned
 

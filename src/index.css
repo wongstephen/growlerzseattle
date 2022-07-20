@@ -27,3 +27,7 @@ body {
   --border-radius: 1rem;
   --speed: 500ms;
 }
+
+* {
+  text-decoration: none;
+}

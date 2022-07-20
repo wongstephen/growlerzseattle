@@ -5,7 +5,7 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 
 export default function ParkRules() {
   return (
-    <div className="parkrules-container">
+    <div className="parkrules-container ">
       <PageTitle title="Growlers" subtitle="Park Rules" />
       {rulesData.parkrules.map((rule) => (
         <div key={rule.title}>

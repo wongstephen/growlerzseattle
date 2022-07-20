@@ -1,3 +1,6 @@
+div.section-intro {
+  margin-top: 4rem;
+}
 .img-container-product {
   width: 100%;
   overflow: hidden;
@@ -19,22 +22,23 @@
 
 /* Weather */
 .park-weather {
-  background-color: white;
-  width: 325px;
-  font-size: .75rem;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 1rem auto;
+  background-color: white;
   border-radius: 2rem;
-  font-weight: 600;
+  display: flex;
+  font-size: .6rem;
+  font-weight: 400;
+  justify-content: center;
   letter-spacing: 1px;
+  margin: 1rem auto;
+  width: 325px
 }
 .park-weather > img {
-  width: 36px;
+  width: 2rem;
   height: auto;
   position: relative;
-  top: -2px;
+  margin-left: 2px;
+  /* top: px; */
 }
 
 /* Alert */
@@ -45,7 +49,7 @@ div.alert {
 }
 
 p.alert {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.25;
   max-width: none;
@@ -154,9 +158,10 @@ div.park-rules-container{
 text-align: center;
 }
 button.park-rules-btn {
-  color: #3772ffff;
+  color: var(--oxford-blue);
   font-weight: 600;
   margin: 1rem auto;
+  text-decoration: none;
 }
 
 
@@ -194,5 +199,8 @@ button.park-rules-btn {
     padding: 0;
     font-size: 1.5rem;
     max-width: 45ch;
+  }
+  p.alert {
+    padding: 2rem;
   }
 }

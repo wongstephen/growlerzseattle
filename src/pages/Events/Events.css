@@ -1,21 +1,22 @@
 div.event-container{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 5rem auto;
   gap: 5rem 2rem;
-
+  justify-content: space-around;
+  margin: 4rem auto;
+  width: 100%;
 }
 div.event-card{
   max-width: 450px;
   margin: 0 2rem;
 }
 div.event-image {
-  max-width: 100%;
   width: 100%;
-  height: 300px;
-  background-color: dimgray;
+  overflow:hidden;
+  max-height: 300px
+}
+img.event-image{
+  width: 100%;
 }
 h2.event-card{
   font-size: 1.75rem;

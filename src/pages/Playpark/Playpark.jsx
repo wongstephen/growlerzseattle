@@ -21,11 +21,6 @@ export default function Playpark() {
     const data = await res.json();
     setWeather(data);
     setLoading(false);
-    //   {
-    //   text: data.current.condition.text,
-    //   temp: data.current.temp_f,
-    //   imgsrc: data.current.condition.icon,
-    // }
   };
 
   useEffect(() => {
@@ -37,17 +32,19 @@ export default function Playpark() {
   }, [weather]);
 
   return (
-    <div>
+    <div className="page-container">
       <PageTitle title="Growlerz" subtitle="Play Park" />
       {!loading && (
         <div className="park-weather">
-          Current Park Conditions: {weather.current.condition.text}{" "}
-          {weather.current.temp_f}
+          Current Park Conditions:
+          {weather.current.condition.text} {weather.current.temp_f}
           &deg;!
-          <img src={weather.current.condition.icon} alt="Weather Icon"></img>
+          <img
+            src={weather.current.condition.icon}
+            alt="Weather Icon"
+          ></img>{" "}
         </div>
       )}
-
       <div className="section-intro">
         <div className="img-container-product">
           <img src={dogPoolImg} alt="Play Park" />
