@@ -211,7 +211,10 @@ export default function Playpark() {
         <div className="park-rules-container">
           Check out our full list of play park rules
           <br />
-          <Link to="/parkrules">
+          <Link
+            to="/parkrules"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <Button variant="outlined" className="getStarted park-rules-btn">
               Play Park Rules
             </Button>
