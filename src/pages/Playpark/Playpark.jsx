@@ -15,7 +15,7 @@ export default function Playpark() {
 
   const getWeather = async () => {
     const res = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
     );
     const data = await res.json();
     setWeather({
