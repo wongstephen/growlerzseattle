@@ -1,56 +1,57 @@
-.product-container {
-  margin: 2rem auto;
-  text-align: center;
-  padding: 0;
-  width: 95vw;
-  max-width: 30rem;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 2rem;
   background-color: white;
-  border-radius: 1rem;
-  /* box-shadow: 0px 5px 5px rgba(0,0,0,.2); */
+  padding-bottom: 3rem;
 }
-.product-img-container {
+.article-container {
+  max-width: 400px;
+  height: auto;
   overflow: hidden;
-  margin: 0; 
-  border-radius: 1rem 1rem 0 0 ;
+  position: relative;
+}
+.article-img-container > img{
   width: 100%;
-  height: 0;
-  padding-bottom: 70%;  
-  box-shadow: 0px 3px 0px rgba(0,0,0,.2);
+  filter: brightness(40%);
 }
-.product-img-container > img {
-  width: 100%;
-  transform: translateY(-2rem);
-}
-div.article-desc-container{
-    padding: 2rem;
-}
-h2.product-title{
-  font-size: 1.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+.article-desc-container {
   margin: 0;
-
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  z-index: 5;
 }
-.product-text {
-  text-align: left;
-  margin: 0 auto;
+h2.article-title{
+  color: white;
+  font-family: var(--secondaryfont);
+  font-size: 3.25rem;
+  letter-spacing: 10px;
+  line-height: 1;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
 }
-
+p.article-text{
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 0 black;
+  color: white;
+  font-family: var(--bodyfont);
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+}
 button.article {
-  margin: 2rem auto;
-  text-decoration: none;
-  font-weight: 900;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  font: var(--bodytext);
+  font-weight: 600;
   letter-spacing: 2px;
-}
-
-@media (min-width: 1024px) {
-  .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 5rem auto;
-
-  }
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
 }

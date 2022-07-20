@@ -13,12 +13,14 @@
   transition: all 0.5s ease;
   width: 100%;
   z-index: 5;
+  padding-left: 0;
 }
 .nav-menu > li > *, .nav-menu > li {
   color: white;
   font-weight: 800;
   line-height: 2;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
 }
 
 button.login-btn {

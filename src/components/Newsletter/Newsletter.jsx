@@ -5,7 +5,7 @@ import { TextField, Button } from "@mui/material";
 export default function Newsletter() {
   return (
     <div className="newsletter-container">
-      <h2>Join our Newsletter</h2>
+      <h2>Join the Growlerz Newsletter</h2>
       <form className="newsletter-form">
         <label htmlFor="newsletter-input">Email</label>
         <TextField

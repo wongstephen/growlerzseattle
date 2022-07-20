@@ -14,6 +14,9 @@ input#newsletter-input {
   display: block;
   width: 75vw;
   max-width: 450px;
+  background-color: white;
+  border-radius: 5px;
+
 }
 .newsletter-form > label {
   display: block;

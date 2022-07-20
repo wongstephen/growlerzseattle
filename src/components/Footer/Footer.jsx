@@ -11,8 +11,22 @@ export default function Footer() {
         SEATTLE, WA 98118 <br />
         (206) 459-2726 <br />
       </p>
-      <Facebook className="footer-social" />
-      <Instagram className="footer-social" />
+      <a
+        href="https://www.facebook.com/growlerzseattle/"
+        rel="noreferrer"
+        target="_blank"
+        className="footer-social"
+      >
+        <Facebook className="footer-social" />
+      </a>
+      <a
+        href="https://www.instagram.com/growlerzseattle/"
+        rel="noreferrer"
+        target="_blank"
+        className="footer-social"
+      >
+        <Instagram className="footer-social" />
+      </a>
       <p className="copyright footer">© copyright {new Date().getFullYear()}</p>
     </footer>
   );

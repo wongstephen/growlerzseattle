@@ -1,10 +1,8 @@
 .welcome-container {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  margin-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .welcome-img-container {
   text-align: center;
@@ -20,8 +18,7 @@ h2.welcome-text {
   font-size: 1rem;
   letter-spacing: 5px;
   position: relative;
-  /* top: -1rem; */
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--bodyfont);
   font-weight: 400;
   text-align: center;
 }

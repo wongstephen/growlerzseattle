@@ -5,6 +5,7 @@ import NavItem from "./NavItem";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  document.body.style.overflow = menuOpen ? "hidden" : "visible";
   return (
     <nav>
       <MenuRounded
