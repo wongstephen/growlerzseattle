@@ -10,7 +10,7 @@ export default function Events() {
     const data = await res.json();
     setEvents(data);
   };
-  useEffect(() => getFetch, []);
+  useEffect(() => getFetch(), []);
   useEffect(() => console.log(events), [events]);
 
   return (

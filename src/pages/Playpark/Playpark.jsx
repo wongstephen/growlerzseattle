@@ -11,29 +11,43 @@ import dogPoolImg from "../../assets/dog-in-pool.jpeg";
 
 export default function Playpark() {
   const key = process.env.REACT_APP_WEATHER_API;
-  const [weather, setWeather] = useState({ text: "", temp: "", imgsrc: "" });
+  const [weather, setWeather] = useState({});
+  const [loading, setLoading] = useState(true);
 
   const getWeather = async () => {
     const res = await fetch(
       `https://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
     );
     const data = await res.json();
-    setWeather({
-      text: data.current.condition.text,
-      temp: data.current.temp_f,
-      imgsrc: data.current.condition.icon,
-    });
+    setWeather(data);
+    setLoading(false);
+    //   {
+    //   text: data.current.condition.text,
+    //   temp: data.current.temp_f,
+    //   imgsrc: data.current.condition.icon,
+    // }
   };
 
-  useEffect(() => getWeather, []);
+  useEffect(() => {
+    getWeather();
+  }, []);
+
+  useEffect(() => {
+    console.log(weather);
+  }, [weather]);
 
   return (
     <div>
       <PageTitle title="Growlerz" subtitle="Play Park" />
-      <div className="park-weather">
-        Current Park Conditions {weather.text} {weather.temp}&deg;!
-        <img src={weather.imgsrc} alt="Weather Icon"></img>
-      </div>
+      {!loading && (
+        <div className="park-weather">
+          Current Park Conditions: {weather.current.condition.text}{" "}
+          {weather.current.temp_f}
+          &deg;!
+          <img src={weather.current.condition.icon} alt="Weather Icon"></img>
+        </div>
+      )}
+
       <div className="section-intro">
         <div className="img-container-product">
           <img src={dogPoolImg} alt="Play Park" />
