@@ -1,5 +1,5 @@
 .newsletter-container {
-  background-color: #fdca40;
+  background-color: var(--orange-web);
   font-weight: 200;
   padding-bottom: 2rem;
   padding-top: 2rem;
