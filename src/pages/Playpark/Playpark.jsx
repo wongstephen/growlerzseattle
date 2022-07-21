@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { React, useState, useEffect } from "react";
 import "./Playpark.css";
-
-import PageTitle from "../../components/PageTitle/PageTitle";
-
+import PageTitle from "../../components/PageTitle/PageTitle.jsx";
+import ParkHours from "../../components/Hours/ParkHours";
+import heroImg from "../../assets/dog-in-pool.jpeg";
+import Price from "../../components/Price/Price";
 import { Button, Alert } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
-import dogPoolImg from "../../assets/dog-in-pool.jpeg";
+import ParkRules from "./ParkRules";
 
 export default function Playpark() {
   const key = process.env.REACT_APP_WEATHER_API;
@@ -27,13 +26,10 @@ export default function Playpark() {
     getWeather();
   }, []);
 
-  useEffect(() => {
-    console.log(weather);
-  }, [weather]);
-
   return (
     <div className="page-container">
       <PageTitle title="Growlerz" subtitle="Play Park" />
+      <ParkHours />
       {!loading && (
         <div className="park-weather">
           Current Park Conditions:
@@ -45,17 +41,22 @@ export default function Playpark() {
           ></img>{" "}
         </div>
       )}
-      <div className="section-intro">
-        <div className="img-container-product">
-          <img src={dogPoolImg} alt="Play Park" />
+      <div className="hero-split">
+        <div className="daycare-img">
+          <img src={heroImg} alt="Hero Play Park" className="daycareImg" />
         </div>
-        <p className="desc intro">
-          Our beautiful off leash play park is designed with both your dog and
-          you in mind! Our 7,000 sq. ft. outdoor space provides your pup room to
-          play while you enjoy a drink in the sun or under one of our covered
-          areas. Our smaller indoor space includes our taproom and plenty of
-          space for you and your dog to hang out.
-        </p>
+        <div className="daycare-hero-text">
+          <h2>
+            Our beautiful off leash play park is designed with both your dog and
+            you in mind!
+          </h2>
+          <p>
+            7,000 sq. ft. outdoor space provides your pup room to play while you
+            enjoy a drink in the sun or under one of our covered areas. Our
+            smaller indoor space includes our taproom and plenty of space for
+            you and your dog to hang out.
+          </p>
+        </div>
       </div>
 
       <div className="alert-container">
@@ -70,156 +71,50 @@ export default function Playpark() {
             up a profile for your dog using the link below and include his/her
             vaccination records. You will be notified once approved. There is no
             cost to set up a profile for your dog.
+            <br />
+            <br />
+            <Button variant="text">
+              Submit Info <ArrowRightAltIcon />
+            </Button>
           </p>
-          <br />
-          <br />
-          <Button variant="text">
-            Submit Info <ArrowRightAltIcon />
-          </Button>
         </Alert>
       </div>
-      {/* Product Pricing */}
+      <ParkRules />
       <div className="product-pricing">
-        <div className="product-pricing-card">
-          <h2>Play Park</h2>
-          <div className="product-line"></div>
-          <p className="desc">Single daily entry. Purchased upon entry.</p>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>12
-              </p>
-            </div>
-            <div>
-              <h3>
-                Two Dogs* <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>18
-              </p>
-              <p className="disclaimer">*Of the same family</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="product-pricing-card">
-          <h2>Punch Card</h2>
-          <div className="product-line"></div>
-          <p className="desc">
-            Good for 10 Discounted visits. The 11th visit is free!
-          </p>
-          <div className="price-container">
-            <div>
-              <h3>One Dog</h3>
-              <p className="price">
-                <span className="currency">$</span>100
-              </p>
-            </div>
-            <div>
-              <h3>
-                Two Dogs <br />
-              </h3>
-              <p className="price">
-                <span className="currency">$</span>170
-              </p>
-              <p className="disclaimer">*Of the same family</p>
-            </div>
-          </div>
-          <Button variant="text" className="getStarted">
-            Get Started <ArrowRightAltIcon />
-          </Button>
-        </div>
-        <div className="product-pricing-card " id="member-card">
-          <h2>Membership</h2>
-          <div className="product-line"></div>
-          <p className="desc">
-            Play park members get unlimited visits to our play park during
-            regular hours and receive a 5% discount for Day Care stays. Monthly
-            and annual membership packages are available.
-          </p>
-          <div className="price-container-member">
-            {/* Monthly Membeership */}
-            <div className="member-flex">
-              <h3 className="price-type">Monthly</h3>
-              <div className="price-container member">
-                <div>
-                  <h3>One Dog</h3>
-                  <p className="price">
-                    <span className="currency">$</span>49
-                    <br />
-                  </p>
-                </div>
-                <div>
-                  <h3>
-                    Two Dogs <br />
-                  </h3>
-                  <p className="price">
-                    <span className="currency">$</span>69 <br />
-                  </p>
-                  <p className="disclaimer">*Of the same family</p>
-                </div>
-              </div>
-            </div>
-            {/* Yearly Membeership */}
-            <div className="member-flex">
-              <h3 className="price-type">Annually</h3>
-              <div className="price-container">
-                <div>
-                  <h3>One Dog</h3>
-                  <p className="price">
-                    <span className="currency">$</span>539 <br />
-                  </p>
-                </div>
-                <div>
-                  <h3>
-                    Two Dogs <br />
-                  </h3>
-                  <p className="price">
-                    <span className="currency">$</span>759 <br />
-                  </p>
-                  <p className="disclaimer">*Of the same family</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <Button variant="text" className="getStarted">
-            Get Started <ArrowRightAltIcon />
-          </Button>
-        </div>
-      </div>
-      {/* Park Rules */}
-      <div className="park-rules">
-        <p className="park-rules-desc">
-          <strong>
-            Patrons using the play park will be responsible for monitoring their
-            dog’s behavior and for cleaning up after their dog(s). Any
-            aggressive behavior or fighting will not be tolerated.{" "}
-          </strong>
-          <br />
-          <br />
-          First offense: all involved dogs will be asked to be put on a leash.
-          <br />
-          <br />
-          Second offense: dogs will be asked to leave that day. Third offense,
-          dogs will no longer be allowed to access services.
-          <br />
-          <br />
-          Payments for services will be forfeited (at a pro-rated rate as
-          applicable). <br />
-        </p>
-        <div className="park-rules-container">
-          Check out our full list of play park rules
-          <br />
-          <Link
-            to="/parkrules"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <Button variant="outlined" className="getStarted park-rules-btn">
-              Play Park Rules
-            </Button>
-          </Link>
-        </div>
+        <Price
+          title="Single Admission"
+          dog1={12}
+          dog2={6}
+          dog2s=""
+          btntext=""
+          btnlink=""
+        />
+        <Price
+          title="11 Admissions Punchcard"
+          dog1={100}
+          dog2={70}
+          dog2s="/add'l"
+          btntext="Purchase"
+          btnlink="https://growlerz.gingrapp.com/front_end/"
+        />
+        <Price
+          title="Monthly Membership"
+          dog1={49}
+          dog1s="/mo"
+          dog2={20}
+          dog2s="/mo"
+          btntext="Purchase"
+          btnlink="https://growlerz.gingrapp.com/front_end/"
+        />
+        <Price
+          title="Yearly Membership"
+          dog1={539}
+          dog1s="/yr"
+          dog2={220}
+          dog2s="/yr"
+          btntext="Purchase"
+          btnlink="https://growlerz.gingrapp.com/front_end/"
+        />
       </div>
     </div>
   );

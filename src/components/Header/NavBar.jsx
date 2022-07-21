@@ -21,9 +21,9 @@ export default function Navigation() {
       <ul className={`nav-menu ${menuOpen ? "open" : "closed"}`} id="navBar">
         <NavItem text="Home" event={setMenuOpen} link={"/"} />
         <NavItem text="Play Park" event={setMenuOpen} link={"/playpark"} />
-        <NavItem text="Day Care" event={setMenuOpen} link={"/"} />
+        <NavItem text="Day Care" event={setMenuOpen} link={"/daycare"} />
         <NavItem text="Events" event={setMenuOpen} link={"/events"} />
-        <NavItem text="FAQ" event={setMenuOpen} link={"/"} />
+        <NavItem text="FAQ" event={setMenuOpen} link={"/faq"} />
         <NavItem text="Contact" event={setMenuOpen} link={"/"} />
         <li className="nav-item">
           <a

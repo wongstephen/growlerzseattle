@@ -1,0 +1,67 @@
+div.product-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2em auto;
+  width: 95%;
+  justify-content: center;
+
+}
+h2.product-pricing, p.product-pricing {
+  margin: 0rem auto;
+  max-width: 500px;
+  padding: 1em;
+}
+div.price-card {
+ background-color: #efefef;
+ padding: 2rem;
+ border-radius: 1rem;
+ flex: 1 0 60%;
+ min-width: 0;
+ max-width: 300px
+}
+h2.price-card{
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1.5rem 0;
+}
+h3.price-card {
+  margin: 0;
+}
+p.price-card{
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+span.tag{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p.price-card.disclaimer {
+  margin: 0;
+  font-size: .5rem;
+  font-weight: 300;
+}
+
+span.currency {
+  font-weight: 400;
+  vertical-align: super;
+  font-size: 1.5rem;
+  position: relative;
+  top: 5px
+}
+
+button.price-card, button.price-card:active, button.price-card:hover {
+  margin: 0 auto;
+  border: 1px solid var(--oxford-blue);
+
+  display: flex;
+}
+button.price-card > a {
+  color: var(--oxford-blue);
+  font-family: var(--bodyfont);
+  font-weight: 600;
+}

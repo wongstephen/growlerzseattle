@@ -1,3 +1,7 @@
+.page-container{
+  background-color: white;
+  margin: 3rem auto;
+}
 div.section-intro {
   margin-top: 4rem;
 }
@@ -23,7 +27,7 @@ div.section-intro {
 /* Weather */
 .park-weather {
   align-items: center;
-  background-color: white;
+  background-color: var(--bg-body);
   border-radius: 2rem;
   display: flex;
   font-size: .6rem;
@@ -57,23 +61,28 @@ p.alert {
 
 /* Pricing */
 
+
+/* 
 .product-pricing {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem auto;
+  gap: 1rem;
+  margin: 4rem auto;
   max-width: 685px;
   width: 95%;
+  justify-content: center;
+}
+div.dog-price{
+  margin-bottom: .5rem;
 }
 .product-pricing-card {
   background-color: var(--oxford-blue);
   border-radius: 1rem;
   color: white;
-  margin: 0 auto;
+  max-width: 300px;
   padding: 2rem 3rem;
   text-align: left;
   width: 90%;  
-  max-width: 300px
 }
 .product-pricing > div > h2 {
   font-size: 2rem;
@@ -93,16 +102,14 @@ p.alert {
   font-weight: 400;
   font-size: 0.75rem;
   margin: 0.25rem;
+
 }
-div.price-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 2.5rem;
-}
+
 p.desc{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 120px;
+
 }
 .price-type{
   font-weight: 600;
@@ -114,6 +121,10 @@ p.desc{
   font-weight: 400;
   margin: 0;
   font-size: 1.25rem;
+}
+div.price-container {
+  min-height: 15rem;
+
 }
 p.price {
   font-weight: 600;
@@ -135,11 +146,18 @@ p.price {
   font-size: 1rem
 }
 
+ */
+
+
+
 /* plan action */
 button.getStarted {
   color: white; 
   font-size: 1rem;
-  margin-bottom: 1rem;
+
+
+  
+
 }
 
 /* Park Rules */
@@ -166,11 +184,11 @@ button.park-rules-btn {
 
 
 
-@media screen and (min-width: 665px) and (max-width: 1024px) {
+/* @media screen and (min-width: 665px) and (max-width: 1024px) {
   div#member-card{
     width: 100%;
     max-width: none;
-    margin: 1rem;
+
   }
   div.price-container-member {
     display: flex;
@@ -183,7 +201,7 @@ button.park-rules-btn {
 .member-flex {
   width: 12rem
 };
-}
+} */
 @media screen and (min-width: 1024px) {
   div.product-pricing{
     max-width: 1024px;
@@ -197,7 +215,7 @@ button.park-rules-btn {
     margin: 0;
     margin-left: 2rem;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     max-width: 45ch;
   }
   p.alert {

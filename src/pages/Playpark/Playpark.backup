@@ -1,0 +1,129 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Playpark.css";
+
+import PageTitle from "../../components/PageTitle/PageTitle";
+import Hours from "../../components/Hours/ParkHours.jsx";
+import ParkPrice from "./ParkPrice";
+
+import { Button, Alert } from "@mui/material";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import dogPoolImg from "../../assets/dog-in-pool.jpeg";
+
+export default function Playpark() {
+  const key = process.env.REACT_APP_WEATHER_API;
+  const [weather, setWeather] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  const getWeather = async () => {
+    const res = await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
+    );
+    const data = await res.json();
+    setWeather(data);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    getWeather();
+  }, []);
+
+
+
+  return (
+    <div className="playpark-container page-container ">
+      <PageTitle title="Growlerz" subtitle="Play Park" />
+      {!loading && (
+        <div className="park-weather">
+          Current Park Conditions:
+          {weather.current.condition.text} {weather.current.temp_f}
+          &deg;!
+          <img
+            src={weather.current.condition.icon}
+            alt="Weather Icon"
+          ></img>{" "}
+        </div>
+      )}
+      <Hours />
+      <div className="section-intro">
+        <div className="img-container-product">
+          <img src={dogPoolImg} alt="Play Park" />
+        </div>
+        <p className="desc intro">
+          Our beautiful off leash play park is designed with both your dog and
+          you in mind! Our 7,000 sq. ft. outdoor space provides your pup room to
+          play while you enjoy a drink in the sun or under one of our covered
+          areas. Our smaller indoor space includes our taproom and plenty of
+          space for you and your dog to hang out.
+        </p>
+      </div>
+
+      <div className="alert-container">
+        <Alert severity="info" className="alert">
+          <p className="alert">
+            Vaccination records ( Rabies, Bordetella & DHPP mandatory) must be
+            submitted and approved before entry to daycare or use of play park.
+            All dogs should be on flea and tick preventative and be wearing a
+            quick release collar. No prong or chain collars are allowed. <br />
+            <br />
+            ​All dogs over 7 months of age must be spayed / neutered. Please set
+            up a profile for your dog using the link below and include his/her
+            vaccination records. You will be notified once approved. There is no
+            cost to set up a profile for your dog.
+          </p>
+          <br />
+          <br />
+          <Button variant="text">
+            Submit Info <ArrowRightAltIcon />
+          </Button>
+        </Alert>
+      </div>
+      {/* Product Pricing */}
+      <div className="product-pricing">
+        <div className="product-pricing-card">
+          <h2>Play Park</h2>
+          <div className="product-line"></div>
+          <p className="desc">Single daily entry. Purchased upon entry.</p>
+          <div className="price-container">
+            <ParkPrice dog="one" cost={12} />
+            <ParkPrice dog="two" cost={18} />
+          </div>
+        </div>
+
+        <div className="product-pricing-card">
+          <h2>Punch Card</h2>
+          <div className="product-line"></div>
+          <p className="desc">
+            Good for 10 Discounted visits. The 11th visit is free!
+          </p>
+          <div className="price-container">
+            <ParkPrice dog="one" cost={100} />
+            <ParkPrice dog="two" cost={170} />
+          </div>
+          <Button variant="text" className="getStarted">
+            See Details <ArrowRightAltIcon />
+          </Button>
+        </div>
+        <div className="product-pricing-card " id="member-card">
+          <h2>Membership</h2>
+          <div className="product-line"></div>
+          <p className="desc">
+            Members get unlimited visits to our play park and receive a 5%
+            discount for Day Care stays.
+          </p>
+          <div className="price-container">
+            <ParkPrice dog="one" cost="49/mo" />
+            <ParkPrice dog="two" cost="69/mo" />
+            <p style={{ fontSize: ".75rem" }}>Annual options available.</p>
+          </div>
+
+          <Button variant="text" className="getStarted">
+            See Details <ArrowRightAltIcon />
+          </Button>
+        </div>
+      </div>
+      {/* Park Rules */}
+      
+    </div>
+  );
+}

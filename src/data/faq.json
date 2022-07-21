@@ -1,0 +1,46 @@
+
+  {
+    "faqs": [
+    {
+      "id": 1,
+      "title": "Are Vaccinations Required?",
+      "desc": "Definitely! Growlerz requires proof of current DHPP, Rabies, and Bordetella vaccinations prior to Day Stay/Daycare and Play Park use. While Bordetella vaccination does not fully eliminate the chance of getting kennel cough, it does help bolster their immunity to it. \n \n Please note there are waiting times required with Bordatella vaccinations: For first time Bordatella vaccination we require a 14 day waiting period before allowing entry to the facility. If your dog has received a re-vaccination for Bordatella, we require a 24 hour wait before entry. Growlerz also requires all dogs to be on some sort of flea prevention. All guests are responsible for ensuring that their records are up to date. "
+    },
+    {
+      "id": 2,
+      "title": "How can I submit vaccination records? ",
+      "desc": "For your convenience, you can email them before you come to Growlerz! We will review them and send you a confirmation that your dog is approved for entry. This saves us form having to turn you away at the door if something isn’t correct or the vaccinations are incomplete. For the health of everyone’s dogs, we are very strict on the vaccination records."
+    },
+    {
+      "id": 3,
+      "title": "SCOOP THE POOP",
+      "desc": "You know the drill. If/when your dog poops in the play park it is your responsibility to pick it up and properly dispose of it in one of our provided trash cans. We have poop bags available so you have no excuse!"
+    },
+    {
+      "id": 4,
+      "title": "Do you serve food?",
+      "desc": "Growlerz does not serve food. BUT, you are welcome to bring in food. There are some great eats in the neighborhood and we occasionally have a food truck come to serve."
+    },
+    {
+      "id": 5,
+      "title": "Who watches my dog in the play park?",
+      "desc": "While using the play park, you are responsible for your dogs behavior and clean-up. There will be staff on duty and will help some in certain situations (it takes a village!)  but they are not responsible for your dog. Dogs showing signs of aggression or escalating behavior may be asked to take a time out or leave."
+    },
+    {
+      "id": 6,
+      "title": "Do you allow puppies?",
+      "desc": "YES! As long as they are at least 4 months and have the required vaccinations submitted."
+    },
+    {
+      "id": 7,
+      "title": "Do you allow kids? ",
+      "desc": "Unfortunately, no. We are a 21 and older business. Sorry, no one under 21 is allowed, including babies. It is the law."
+    },
+    {
+      "id": 8,
+      "title": "Do I need a dog for entry? ",
+      "desc": "The facility is primarily for guests to exercise their dogs, but you are more than welcome to come in, grab a beer, and get your dog fix watching the pups play. Or, stop in for a growler fill to go!"
+    }
+  ]
+}
+
