@@ -9,7 +9,7 @@
 }
 .article-container {
   height: auto;
-  max-width: 400px;
+  max-width: 450px;
   overflow: hidden;
   position: relative;
 }
@@ -19,7 +19,6 @@
 }
 .article-desc-container {
   margin: 0;
-  max-width: 400px;
   position: absolute;
   top: 0;
   z-index: 5;
@@ -43,7 +42,8 @@ p.article-text{
   font-family: var(--bodyfont);
   font-size: 1rem;
   font-weight: 300;
-  padding: 1rem;
+  padding: 1.5em;
+
 }
 button.article {
   border: 2px solid white;

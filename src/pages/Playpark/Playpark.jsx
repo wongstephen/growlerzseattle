@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import "./Playpark.css";
 import PageTitle from "../../components/PageTitle/PageTitle.jsx";
 import ParkHours from "../../components/Hours/ParkHours";
-import heroImg from "../../assets/dog-in-pool.jpeg";
+import heroImg from "../../assets/291948834_822416192465691_3840088884492033897_n.jpg";
 import Price from "../../components/Price/Price";
 import { Button, Alert } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -14,12 +14,16 @@ export default function Playpark() {
   const [loading, setLoading] = useState(true);
 
   const getWeather = async () => {
-    const res = await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
-    );
-    const data = await res.json();
-    setWeather(data);
-    setLoading(false);
+    try {
+      const res = await fetch(
+        `https://api.weatherapi.com/v1/current.json?key=${key}&q=98118&aqi=no`
+      );
+      const data = await res.json();
+      setWeather(data);
+      setLoading(false);
+    } catch (error) {
+      console.log("Error: " + error);
+    }
   };
 
   useEffect(() => {

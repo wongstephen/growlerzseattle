@@ -2,7 +2,7 @@ import React from "react";
 import "./Daycare.css";
 import PageTitle from "../../components/PageTitle/PageTitle.jsx";
 import DaycareHours from "../../components/Hours/DaycareHours";
-import heroImg from "../../assets/alvan-nee-brFsZ7qszSY-unsplash.jpg";
+import heroImg from "../../assets/292164134_603341337893015_7559827513983418038_n.jpg";
 import Price from "../../components/Price/Price";
 
 export default function Daycare() {

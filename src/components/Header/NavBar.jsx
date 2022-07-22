@@ -24,7 +24,7 @@ export default function Navigation() {
         <NavItem text="Day Care" event={setMenuOpen} link={"/daycare"} />
         <NavItem text="Events" event={setMenuOpen} link={"/events"} />
         <NavItem text="FAQ" event={setMenuOpen} link={"/faq"} />
-        <NavItem text="Contact" event={setMenuOpen} link={"/"} />
+        <NavItem text="Contact" event={setMenuOpen} link={"/contact"} />
         <li className="nav-item">
           <a
             href="https://growlerz.gingrapp.com/front_end/login/email"

@@ -11,15 +11,17 @@ export default function Products({ title, image, text, link, textBtn }) {
         <div className="article-desc-container">
           <h2 className="article-title">{title}</h2>
           <p className="article-text">{text}</p>
-          <Link
-            to={`/${link}`}
-            style={{ textDecoration: "none" }}
-            className="article"
-          >
-            <Button variant="outlined" className="article">
-              {textBtn}
-            </Button>
-          </Link>
+          {textBtn !== "" && (
+            <Link
+              to={`/${link}`}
+              style={{ textDecoration: "none" }}
+              className="article"
+            >
+              <Button variant="outlined" className="article">
+                {textBtn}
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

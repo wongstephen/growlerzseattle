@@ -10,6 +10,7 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
 import ParkRules from "./pages/ParkRules/ParkRules";
 import Daycare from "./pages/Daycare/Daycare";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -18,11 +19,12 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/playpark" element={<Playpark />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/daycare" element={<Daycare />} />
-        <Route path="/parkrules" element={<ParkRules />} />
-        <Route path="/faq" element={<Faq />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/parkrules" element={<ParkRules />} />
+        <Route path="/playpark" element={<Playpark />} />
       </Routes>
       <Newsletter />
       <Footer />

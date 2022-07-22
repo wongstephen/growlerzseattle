@@ -8,10 +8,14 @@ export default function Events() {
   const [loading, setLoading] = useState(true);
 
   const getFetch = async () => {
-    const res = await fetch("https://sheetdb.io/api/v1/v773z8g8v6ih2");
-    const data = await res.json();
-    setEvents(data);
-    setLoading(false);
+    try {
+      const res = await fetch("https://sheetdb.io/api/v1/v773z8g8v6ih2");
+      const data = await res.json();
+      setEvents(data);
+      setLoading(false);
+    } catch (error) {
+      console.log("Error: " + error);
+    }
   };
   useEffect(() => {
     getFetch();
